@@ -34,6 +34,7 @@ ls ~/Lab12/logi_web1/
 cat ~/Lab12/logi_web1/
 ```
 <img width="731" height="491" alt="Screenshot From 2026-06-09 22-00-18" src="https://github.com/user-attachments/assets/dcf153bd-a9cf-4f1b-9022-8f9c6eedd62b" />
+
 ```
 docker exec web1 touch /usr/share/nginx/html/a
 ```
