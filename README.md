@@ -16,6 +16,7 @@ Analogicznie dla web2 i web3 - tylko inne porty
 docker ps
 ```
 <img width="921" height="165" alt="Screenshot From 2026-06-09 21-57-32" src="https://github.com/user-attachments/assets/538b78ed-75fd-456a-b476-1395d244813d" />
+
 ```
 docker network inspect lab12net
 ```
