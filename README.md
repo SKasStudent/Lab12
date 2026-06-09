@@ -9,6 +9,8 @@ docker network create lab12net
 docker run -d --name web1 --network lab12net --p 8080:80 -v ~/Lab12/html:/usr/share/nginx/html:ro \
 -v ~/Lab12/logi_web1:/var/log/nginx nginx:latest
 ```
+:ro w pierwszym woluminie odpowiada za opcję read only.
+
 Analogicznie dla web2 i web3 - tylko inne porty
 
 **Polecenia sprawdzające poprawne działanie:**
@@ -32,3 +34,7 @@ ls ~/Lab12/logi_web1/
 cat ~/Lab12/logi_web1/
 ```
 <img width="731" height="491" alt="Screenshot From 2026-06-09 22-00-18" src="https://github.com/user-attachments/assets/dcf153bd-a9cf-4f1b-9022-8f9c6eedd62b" />
+```
+docker exec web1 touch /usr/share/nginx/html/a
+```
+<img width="637" height="71" alt="Screenshot From 2026-06-09 22-45-17" src="https://github.com/user-attachments/assets/301ef25d-0e0b-40ca-b6f1-781f085a46d6" />
